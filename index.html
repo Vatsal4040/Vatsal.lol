@@ -15,7 +15,6 @@ body {
   color: #fff;
 }
 
-/* HEADER */
 header {
   padding: 32px 24px 12px;
 }
@@ -31,7 +30,6 @@ header p {
   opacity: 0.6;
 }
 
-/* GRID */
 .grid {
   padding: 32px 24px 100px;
   display: grid;
@@ -39,7 +37,6 @@ header p {
   gap: 20px;
 }
 
-/* GAME CARD */
 .game {
   background: #111;
   border-radius: 16px;
@@ -58,13 +55,8 @@ header p {
   cursor: default;
 }
 
-.game-number {
-  font-size: 0.85rem;
-  opacity: 0.5;
-}
-
 .game-title {
-  margin: 6px 0 8px;
+  margin: 0 0 8px;
   font-size: 1.25rem;
   font-weight: 600;
 }
@@ -75,7 +67,6 @@ header p {
   line-height: 1.4;
 }
 
-/* FOOTER */
 footer {
   position: fixed;
   bottom: 0;
@@ -97,80 +88,99 @@ footer {
 
 <main class="grid">
 
-  <!-- Game 1 -->
+  <!-- 1–10 -->
   <div class="game" onclick="location.href='https://vatsal4040.github.io/Vatsal.lol001-Guess-the-Lie/'">
-    <!-- <div class="game-number">Game 1</div> -->
     <div class="game-title">🤥 Guess the Lie</div>
-    <div class="game-desc">One statement is false. Can you spot it?</div>
+    <div class="game-desc">One statement is false.</div>
   </div>
 
-  <!-- Game 2 -->
   <div class="game" onclick="location.href='https://vatsal4040.github.io/Vatsal.lol002-Would-You/'">
-    <!-- <div class="game-number">Game 2</div> -->
-    <div class="game-title">🔘 Would You Press the Button?</div>
-    <div class="game-desc">A tempting reward. A terrible cost.</div>
+    <div class="game-title">🔘 Would You Press the Button</div>
+    <div class="game-desc">A reward. A consequence.</div>
   </div>
 
-  <!-- Game 3 -->
   <div class="game" onclick="location.href='https://vatsal4040.github.io/Vatsal.lol003-Tower-of-Hanoi/'">
-    <!-- <div class="game-number">Game 3</div> -->
     <div class="game-title">🗼 Tower of Hanoi</div>
-    <div class="game-desc">A classic puzzle. Fewer moves than you think.</div>
+    <div class="game-desc">Move carefully.</div>
   </div>
 
-  <!-- Game 4 -->
   <div class="game" onclick="location.href='https://vatsal4040.github.io/Vatsal.lol004-Fast-Tap/'">
-    <!-- <div class="game-number">Game 4</div> -->
     <div class="game-title">⚡ Fast Tap</div>
-    <div class="game-desc">How fast can you really react?</div>
+    <div class="game-desc">React. Instantly.</div>
   </div>
 
-  <!-- Game 5 -->
   <div class="game" onclick="location.href='https://vatsal4040.github.io/Vatsal.lol005-SuSu/'">
-    <!-- <div class="game-number">Game 5</div> -->
     <div class="game-title">🚽 Pee Pee Time</div>
-    <div class="game-desc">Don’t ask. Just play.</div>
+    <div class="game-desc">Choose wisely.</div>
   </div>
 
-  <!-- Game 6 -->
   <div class="game" onclick="location.href='https://vatsal4040.github.io/Vatsal.lol006-Count-to-10/'">
-    <!-- <div class="game-number">Game 6</div> -->
-    <div class="game-title">⏳ Do Not Hurry — Count to 10</div>
-    <div class="game-desc">Patience is harder than it sounds.</div>
+    <div class="game-title">⏳ Count to 10</div>
+    <div class="game-desc">Someone may ruin it.</div>
   </div>
 
-  <!-- Game 7 -->
   <div class="game" onclick="location.href='https://vatsal4040.github.io/Vatsal.lol007-limit-ma/'">
-    <!-- <div class="game-number">Game 7</div> -->
     <div class="game-title">🚦 Under Limit</div>
-    <div class="game-desc">Stay under the limit. That’s it.</div>
+    <div class="game-desc">Don’t cross it.</div>
   </div>
 
-  <!-- Game 8 -->
-  <div class="game" onclick="location.href='https://vatsal4040.github.io/Vatsal.lol008-bpl/ '">
-    <!-- <div class="game-number">Game 8</div> -->
-    <div class="game-title">💸 BPL</div>
-    <div class="game-desc">Spend it. All of it.</div>
+  <div class="game" onclick="location.href='https://vatsal4040.github.io/Vatsal.lol008-bpl/'">
+    <div class="game-title">💸 Spend Bill Gates’ Money</div>
+    <div class="game-desc">Spend everything.</div>
   </div>
 
-  <!-- Game 9 -->
-  <div class="game" onclick="location.href='https://vatsal4040.github.io/Vatsal.lol009-circle-is-goal/ '">
-    <!-- <div class="game-number">Game 9</div> -->
+  <div class="game" onclick="location.href='https://vatsal4040.github.io/Vatsal.lol009-circle-is-goal/'">
     <div class="game-title">⭕ Draw a Perfect Circle</div>
+    <div class="game-desc">Good luck.</div>
+  </div>
+
+  <div class="game disabled">
+    <div class="game-title">Game 10</div>
     <div class="game-desc">Coming soon.</div>
   </div>
 
-  <!-- Game 10 -->
+  <!-- 11–15 -->
   <div class="game disabled">
-    <div class="game-number">Game 10</div>
-    <div class="game-title">Coming Soon</div>
-    <div class="game-desc">Something new.</div>
+    <div class="game-title">Flash Memory Challenge</div>
+    <div class="game-desc">Blink and lose.</div>
   </div>
+
+  <div class="game disabled">
+    <div class="game-title">Snake</div>
+    <div class="game-desc">Eat. Grow. Crash.</div>
+  </div>
+
+  <div class="game disabled">
+    <div class="game-title">Tetris</div>
+    <div class="game-desc">Everything fits. Until it doesn’t.</div>
+  </div>
+
+  <div class="game disabled">
+    <div class="game-title">Doodle Jump</div>
+    <div class="game-desc">Gravity waits.</div>
+  </div>
+
+  <!-- GAME 15 LIVE -->
+  <div class="game" onclick="location.href='https://vatsal4040.github.io/Vatsal.lol015blink-/'">
+    <div class="game-title">🧠 Memory Tiles</div>
+    <div class="game-desc">Remember the pattern.</div>
+  </div>
+
+  <!-- 16–24 placeholders -->
+  <div class="game disabled"><div class="game-title">Game 16</div><div class="game-desc">Coming soon.</div></div>
+  <div class="game disabled"><div class="game-title">Game 17</div><div class="game-desc">Coming soon.</div></div>
+  <div class="game disabled"><div class="game-title">Game 18</div><div class="game-desc">Coming soon.</div></div>
+  <div class="game disabled"><div class="game-title">Game 19</div><div class="game-desc">Coming soon.</div></div>
+  <div class="game disabled"><div class="game-title">Game 20</div><div class="game-desc">Coming soon.</div></div>
+  <div class="game disabled"><div class="game-title">Game 21</div><div class="game-desc">Coming soon.</div></div>
+  <div class="game disabled"><div class="game-title">Game 22</div><div class="game-desc">Coming soon.</div></div>
+  <div class="game disabled"><div class="game-title">Game 23</div><div class="game-desc">Coming soon.</div></div>
+  <div class="game disabled"><div class="game-title">Game 24</div><div class="game-desc">Coming soon.</div></div>
 
 </main>
 
 <footer>
-  More games coming soon.
+  24 slots locked. More coming soon.
 </footer>
 
 </body>
