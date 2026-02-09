@@ -52,6 +52,19 @@ body {
 .logo:hover {
   transform: scale(1.05);
 }
+/* Child container for text */
+.site-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;  /* Aligns text to left within its container */
+  text-align: left;         /* Aligns text to left */
+}
+
+/* If you want the text centered too: */
+.site-title.centered {
+  align-items: center;      /* Centers child elements horizontally */
+  text-align: center;       /* Centers text */
+}
 
 .header-text {
   flex: 1;
