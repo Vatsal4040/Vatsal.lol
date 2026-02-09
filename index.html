@@ -24,6 +24,7 @@ header {
   padding: 32px 24px 12px;
   display: flex;
   align-items: center;
+  text-align: center;
   gap: 20px;
 }
 .logo-container {
@@ -36,9 +37,7 @@ header {
 .logo {
   width: 80px;
   height: 80px;
- 
   object-fit: cover;
-  
   transition: transform 0.3s ease;
 }
 
@@ -51,20 +50,31 @@ header {
 }
 header h1 {
   margin: 0;
-  font-size: 2.2rem;
-  font-weight: 700;
+  font-size: 2.5rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+    .emoji {
+  font-size: 2rem;
 }
 
 header p {
   margin: 8px 0 0;
   opacity: 0.6;
+  font-size: 1.2rem;
+  line-height: 1.5;
 }
-
 .grid {
   padding: 32px 24px 100px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .game {
@@ -80,6 +90,11 @@ header p {
   background: #181818;
 }
 
+    .game.disabled:hover {
+  transform: none;
+  background: #111;
+  box-shadow: none;
+}
 .game.disabled {
   opacity: 0.35;
   cursor: default;
